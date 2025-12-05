@@ -1,22 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>team dividers</title>
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
-    <div class="flex sm:flex-col items-center  ">
-        <h1 class=" text-[30px] font-bold  mt-5 tracking-[2px]">Team dividers</h1>
-     <div>
-        
-    <textarea name="" id="text_area" class="ps-[20px] pt-[10px] pb-[20px] w-[550px] h-[90px] pe-[100px] rounded-[10px] border-[3px]  shadow-md mt-[100px] text-[18px]"></textarea>
-    <span class="bg-blue-500 px-[25px] py-[15px] ml-[50px] relative bottom-[35px] font-bold text-[15px] text-[white] cursor-pointer" id="divide">divide</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Weaver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
 
-     </div>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    a {
+      text-decoration: none;
+    }
+  </style>
+  <body class="bg-[#dff5fb]">
+    <!-- component-1 -->
+
+    <div class="mt-[90px]">
+      <div class="flex items-center justify-center">
+        <img src="./assests/logo.svg" alt="" class="w-[64px]" />
+        <h1
+          class="text-4xl sm:text-[45px] font-semibold text-[#164765] mt-[2px]"
+        >
+          Team Weaver
+        </h1>
+      </div>
+      <p
+        class="mt-[px] sm:text-lg text-[#3b6d82] text-center text-[13px] sm:ms-[15px]"
+      >
+        Effortlessly divide your group into two teams.
+      </p>
     </div>
+
+    <!-- components-2 -->
+    <div
+      class="flex flex-col justify-center max-w-[95%] sm:max-w-[720px] mx-auto bg-white mt-[40px] ps-[20px] sm:ps-[35px] rounded-[10px] shadow-sm sm:shadow-lg"
+    >
+      <h2
+        class="text-1xl sm:text-2xl font-semibold text-[#164765] mt-[25px] mb-[5px]"
+      >
+        Enter Team Members
+      </h2>
+      <p class="text-[11px] sm:text-[13px] text-[#618398]">
+        Type the names of all members, separated by commas.
+      </p>
+
+      <p class="text-sm font-semibold text-[black] mt-[30px] mb-3">
+        Member Names
+      </p>
+      <textarea
+        name=""
+        id="input_values"
+        placeholder="e.g.,John, Jane, Michael"
+        class="max-w-[95%] h-[100px] sm:w-[650px] sm:h-[100px] text-[10px] sm:text-[13px] font-medium p-[10px] rounded-[10px] border-[2px] border-[#1fb6ff]"
+      ></textarea>
+      <div
+        class="flex flex-col sm:flex-row ma-w-[90%] mx-auto gap-[30px] mt-[20px] justify-center mb-[25px]"
+      >
+        <div
+          class="inline-flex items-center justify-center gap-2 px-7 py-3 rounded-lg bg-amber-500 text-[#8b4e0a] font-medium text-sm sm:text-base shadow-sm hover:bg-[#f5b763]"
+        >
+          <img src="./assests/shuffle_icon.svg" alt="" />
+          <button id="divide_teams"  class="cursor-pointer">Divide Teams</button>
+        </div>
+        <div
+          class="flex items-center justify-center gap-2 px-7 py-3 rounded-lg bg-[#e1f4fb] text-[#164765] font-medium text-sm sm:text-base border border-[#c7e2f0] hover:bg-[#cde9f7]"
+        >
+          <img src="./assests/reset_icon.svg" alt="" />
+          <button id="reset" class="cursor-pointer">Reset</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- components-3 -->
+   <section id="section" class="mt-16   items-center mb-[20px] sm:mb-[30px]">
+  <div id="container" class="flex flex-col sm:flex-row sm:justify-between  max-w-[95%] sm:max-w-[920px] mx-auto gap-[20px] sm:gap-[30px] " >
+
+<!--\bg-white  shadow-sm sm:shadow-lg -->
+
+
+
+
+
+    <!-- Team A  -->
+    <div id="team1" class=" w-[90%] mx-auto sm:w-full md:w-1/2 ">
+      <!-- <h2 class="text-3xl font-semibold text-center text-[#164765] mb-8">
+        Team A
+      </h2>
+
+      <div class="flex items-center gap-4 bg-[#eaf4f7] px-6 py-4 rounded-xl shadow-sm mb-[20px]">
+      
+          <p class="text-lg text-[#194e64] font-medium">1. William</p>
+        </div> -->
+
+        
+    </div>
+
+
+    <!-- Team B -->
+    <div id="team2" class="w-[90%] mx-auto sm:w-full md:w-1/2 ">
+      <!-- <h2 class="text-3xl font-semibold text-center text-[#164765] mb-8">
+        Team B
+      </h2>
+
+       <div class="flex items-center gap-4 bg-[#eaf4f7] px-6 py-4 rounded-xl shadow-sm">
+      
+          <p class="text-lg text-[#194e64] font-medium">1. William</p>
+        </div> -->
+ </div>
+
+  </div>
+</section>
+
+
     <script src="./team.js"></script>
-</body>
+  </body>
 </html>
+
+<!-- 
+John, Jane, Michael, Emily, David, Sarah, Christopher, Amanda, Matthew, Ashley, James, Jessica, Robert, Elizabeth, William, Jennifer, Richard, Patricia, Daniel, Linda
+ -->
